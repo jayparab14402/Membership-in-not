@@ -1,0 +1,13 @@
+print("Jay Parab")
+def overlapping(list1, list2):
+ for i in range(0, len(list1)):
+     for j in range(0, len(list2)):
+         if(list1[i] == list2[j]):
+             return 1
+ return 0
+list1 = [2,3,4,5]
+list2 = [1,7,8,9]
+if(overlapping(list1, list2)):
+ print("Overlapping")
+else:
+ print("Not Overlapping")
